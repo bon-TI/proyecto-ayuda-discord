@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+/* font-family: 'Righteous', cursive; */
+
+body{
+    background-color: #404eed; 
+    user-select: none;
+}
+
+#section-form{
+    border-radius: 15px;
+    background-color: #32353a;
+    color: whitesmoke;
+    background-image: url('../img/fondo-wumpus.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40em;
+}
+
+.title{
+    font-family: 'Righteous', cursive;
+}
+
+#section-form input, #section-form textarea{
+    background-color: transparent;
+    caret-color: white;
+    box-shadow: none;
+}
+
+#section-form #name,
+#section-form #name::placeholder {
+    color: #29cc7a;
+}
+
+#section-form #last-name,
+#section-form #last-name::placeholder {
+    color: #9baad2;
+}
+
+#section-form #email,
+#section-form #email::placeholder {
+    color: #de3a93;
+}
+
+#section-form #phone,
+#section-form #phone::placeholder {
+    color: #ffc619;
+}
+
+#section-form #message,
+#section-form #message::placeholder {
+    color: #8cd9ff;
+}
+
+#section-form #button{
+    background-color: white;
+    border-color: white;
+    color: #32353a;
+    box-shadow: none;
+    font-family: 'Righteous', cursive;
+}
+
+#section-form #button:hover{
+    background: none;
+    border-color: transparent;
+    color: white;
+    box-shadow: none;
+}

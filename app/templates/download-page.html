@@ -1,0 +1,100 @@
+{% extends './layout.html' %} {% block title %}{{ data.titulo }}{% endblock %}
+{% block styles %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/download-page.css') }}"
+/>
+{% endblock %} {% block content %}
+
+<div class="p-5 mb-4" id="jumbotron">
+  <div class="container-fluid py-5">
+    <h1 class="display-5 fw-bold">IMAGINA UN LUGAR...</h1>
+    <p class="col-md-8 fs-4">
+      En esta pagina encontraras una plantilla de un servidor de Discord que
+      hemos creado pensando en ti, para que puedan usar en sus salones virtuales
+    </p>
+    <p class="col-md-8 fs-4">
+        Ademas los links de descarga se encuentran al fondo, usa el que sea compatible con tu dispositivo
+    </p>
+    <p class="col-md-8 fs-4">Disfrutalo</p>
+    <a class="btn btn-primary btn-lg" type="button">
+      Mira la plantilla aqui
+    </a>
+  </div>
+  <p class="text-center fs-1"><span><i class="fas fa-arrow-down"></i></span></p>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 text-center" id="windows">
+      <span><i class="fab fa-windows"></i></span>
+    </div>
+    <div class="col-md-6 text-center my-auto" id="windows-info">
+      <h1 class="font-weight-bolder">Windows</h1>
+      <p>Windows 7 o superior</p>
+      <a
+        class="btn btn-primary"
+        href=""
+        >Descargar</a
+      >
+    </div>
+  </div>
+  <div class="row flex-row-reverse">
+    <div class="col-md-6 text-center" id="mac">
+      <i class="fab fa-apple"></i>
+    </div>
+    <div class="col-md-6 text-center my-auto" id="mac-info">
+      <h1 class="font-weight-bolder">Mac</h1>
+      <a
+        class="btn btn-primary"
+        href=""
+        >Descargar</a
+      >
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 text-center" id="linux">
+      <i class="fab fa-linux"></i>
+    </div>
+    <div class="col-md-6 text-center my-auto" id="linux-info">
+      <h1 class="font-weight-bolder">Linux</h1>
+      <a
+        class="btn btn-primary"
+        href=""
+        >Descargar (deb)</a
+      >
+      <a
+        class="btn btn-primary"
+        href=""
+        >Descargar (tar.gz)</a
+      >
+    </div>
+  </div>
+  <div class="row flex-row-reverse">
+    <div class="col-md-6 text-center" id="android">
+      <i class="fab fa-google-play"></i>
+    </div>
+    <div class="col-md-6 text-center my-auto" id="android-info">
+      <h1 class="font-weight-bolder">Android</h1>
+      <a
+        class="btn btn-primary"
+        href=""
+        >Descargar</a
+      >
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 text-center" id="ios">
+      <i class="fab fa-app-store-ios"></i>
+    </div>
+    <div class="col-md-6 text-center my-auto" id="ios-info">
+      <h1 class="font-weight-bolder">iOS</h1>
+      <a
+        class="btn btn-primary"
+        href=""
+        >Descargar</a
+      >
+    </div>
+  </div>
+</div>
+{% endblock %}

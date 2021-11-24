@@ -1,0 +1,49 @@
+{% extends './layout.html' %}
+
+{% block title %}{{ data.titulo }}{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/contact-page.css') }}">
+{% endblock %}
+
+{% block content %}
+
+    <section class="d-flex justify-content-center m-4">
+        <div class="card col-sm-6 p-3" id="section-form">
+            <div class="title text-center m-2">
+                <h2>Gracias por Visitarnos</h2>
+                <h3>Contactanos Aqui</h3>
+            </div>
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label for="" class="form-label">
+                        Nombre
+                    </label>
+                    <input type="text" class="form-control" id="name" placeholder="Pon tu nombre"> 
+                </div>
+                <div class="col-md-6">
+                    <label for="" class="form-label">
+                        Apellido
+                    </label>
+                    <input type="text" class="form-control" id="last-name" placeholder="Pon tu apellido"> 
+                </div>
+                <div class="col-md-8">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="correocompleto@correo.com">
+                </div>
+                <div class="col-md-4">
+                    <label for="phone" class="form-label">Telefono</label>
+                    <input type="phone" class="form-control" id="phone" placeholder="xxx-xxx-xxxx">
+                </div>
+                <div class="col-md-12">
+                    <label for="message" class="form-label">Escribe tu Mensaje</label>
+                    <textarea class="form-control" name="" id="message" rows="5" placeholder="Mensaje"></textarea>
+                </div>
+                <div class="col-md-6">
+                    <button type="submit" class="btn" id="button">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+{% endblock %}
