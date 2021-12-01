@@ -1,68 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 /* font-family: 'Righteous', cursive; */
 
-body{
-    user-select: none;
+body {
+  user-select: none;
 }
 
-#jumbotron{
-    padding: 30px;
-    background: #404eed;
-    background-image: url(../img/stars-jt.svg);
-    background-repeat: no-repeat;
-    background-position-x: 100%;
-    background-position-y: 0%;
-    background-size: 800px;
-    font-family: 'Righteous', cursive;
-
+#jumbotron {
+  padding: 30px;
+  background: #404eed;
+  background-image: url(../img/stars-jt.svg);
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 0%;
+  background-size: 800px;
+  font-family: "Righteous", cursive;
 }
 
-.container i{
-    font-size: 150px;
-    padding: 50px;
-    border-radius: 15px;
-    border: 1px solid #f6f6f6;
-    background-color: #f6f6f6;
-    color: #23272a;
+.container i {
+  font-size: 150px;
+  padding: 50px;
+  border-radius: 15px;
+  border: 1px solid #f6f6f6;
+  background-color: #f6f6f6;
+  color: #23272a;
 }
 
-#windows, #mac, #linux, #ios, #android{
-    margin-top: 40px;
-    margin-bottom: 40px;
+.plantilla h1 {
+  font-family: "Righteous", cursive;
+  letter-spacing: 2px;
+}
+.plantilla a {
+  color: #404eed;
+  text-decoration: none;
+}
+.plantilla a:hover {
+  text-decoration: underline;
+  color: #252d8d;
 }
 
-#windows-info h1{
-    color: #1e8a54;
+.fa-discord {
+  font-size: 70px;
+  color: #404eed;
+}
+#windows,
+#mac,
+#linux,
+#ios,
+#android {
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
-#mac-info h1{
-    color: #727d9c;
+#windows-info h1 {
+  color: #1e8a54;
 }
 
-#linux-info h1{
-    color: #de3a93;
+#mac-info h1 {
+  color: #727d9c;
 }
 
-#android-info h1{
-    color: #ffc619;
+#linux-info h1 {
+  color: #de3a93;
 }
 
-#ios-info h1{
-    color: #85caec;
+#android-info h1 {
+  color: #ffc619;
 }
 
-.container a, #jumbotron a{
-    margin: 5px;
-    background-color: #23272a;
-    border-color: #23272a;
-    font-family: 'Righteous', cursive;
-} 
-
-
-.container a:hover, #jumbotron a:hover{
-    background-color: #404eed;
-    border-color: #404eed;
-    color: #fff;
-    box-shadow: none;
+#ios-info h1 {
+  color: #85caec;
 }
 
+.container a,
+#jumbotron a {
+  margin: 5px;
+  background-color: #23272a;
+  border-color: #23272a;
+  font-family: "Righteous", cursive;
+}
+
+.container a:hover,
+#jumbotron a:hover {
+  background-color: #404eed;
+  border-color: #404eed;
+  color: #fff;
+  box-shadow: none;
+}

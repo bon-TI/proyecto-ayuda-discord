@@ -18,6 +18,7 @@ body{
 
 .title{
     font-family: 'Righteous', cursive;
+    letter-spacing: 1px;
 }
 
 #section-form input, #section-form textarea{
@@ -64,4 +65,19 @@ body{
     border-color: transparent;
     color: white;
     box-shadow: none;
+}
+
+.nstr-srv{
+    font-family: 'Righteous', cursive;
+}
+
+.nstr-srv-btn{
+    background-color: #32353a;
+    color: #fff;
+    font-family: 'Righteous', cursive;
+}
+.nstr-srv-btn:hover{
+    background-color: transparent;
+    color: #32353a;
+    
 }

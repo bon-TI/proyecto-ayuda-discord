@@ -4,40 +4,65 @@
 
 {% block content %}
 
-<h2>FUNCIONA LA PAGINA DE DOCS</h2>
-
-<nav id="navbar-example3" class="navbar navbar-light bg-light flex-column align-items-stretch p-3">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <nav class="nav nav-pills flex-column">
-    <a class="nav-link" href="#item-1">Item 1</a>
-    <nav class="nav nav-pills flex-column">
-      <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
-      <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
-    </nav>
-    <a class="nav-link" href="#item-2">Item 2</a>
-    <a class="nav-link" href="#item-3">Item 3</a>
-    <nav class="nav nav-pills flex-column">
-      <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
-      <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
-    </nav>
-  </nav>
-</nav>
-
-<div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-offset="0" tabindex="0">
-  <h4 id="item-1">Item 1</h4>
-  <p>...</p>
-  <h5 id="item-1-1">Item 1-1</h5>
-  <p>...</p>
-  <h5 id="item-1-2">Item 1-2</h5>
-  <p>...</p>
-  <h4 id="item-2">Item 2</h4>
-  <p>...</p>
-  <h4 id="item-3">Item 3</h4>
-  <p>...</p>
-  <h5 id="item-3-1">Item 3-1</h5>
-  <p>...</p>
-  <h5 id="item-3-2">Item 3-2</h5>
-  <p>...</p>
+<div class="flex-shrink-0 p-3 bg-white" style="width: 280px;">
+  <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+    <svg class="bi me-2" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+    <span class="fs-5 fw-semibold">Collapsible</span>
+  </a>
+  <ul class="list-unstyled ps-0">
+    <li class="mb-1">
+      <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+        Home
+      </button>
+      <div class="collapse show" id="home-collapse">
+        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+          <li><a href="#" class="link-dark rounded">Overview</a></li>
+          <li><a href="#" class="link-dark rounded">Updates</a></li>
+          <li><a href="#" class="link-dark rounded">Reports</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="mb-1">
+      <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+        Dashboard
+      </button>
+      <div class="collapse" id="dashboard-collapse">
+        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+          <li><a href="#" class="link-dark rounded">Overview</a></li>
+          <li><a href="#" class="link-dark rounded">Weekly</a></li>
+          <li><a href="#" class="link-dark rounded">Monthly</a></li>
+          <li><a href="#" class="link-dark rounded">Annually</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="mb-1">
+      <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+        Orders
+      </button>
+      <div class="collapse" id="orders-collapse">
+        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+          <li><a href="#" class="link-dark rounded">New</a></li>
+          <li><a href="#" class="link-dark rounded">Processed</a></li>
+          <li><a href="#" class="link-dark rounded">Shipped</a></li>
+          <li><a href="#" class="link-dark rounded">Returned</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="border-top my-3"></li>
+    <li class="mb-1">
+      <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+        Account
+      </button>
+      <div class="collapse" id="account-collapse">
+        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+          <li><a href="#" class="link-dark rounded">New...</a></li>
+          <li><a href="#" class="link-dark rounded">Profile</a></li>
+          <li><a href="#" class="link-dark rounded">Settings</a></li>
+          <li><a href="#" class="link-dark rounded">Sign out</a></li>
+        </ul>
+      </div>
+    </li>
+  </ul>
 </div>
 {% endblock %}
 
