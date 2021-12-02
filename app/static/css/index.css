@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+/* font-family: 'Righteous', cursive; */
+body{
+    user-select: none;
+}
+
+.banner{
+    background-color: #d5dde6;
+    background-image: url('../img/clouds.svg');
+    background-size: 100%;
+    background-position-y: 100%;
+    background-repeat: no-repeat;
+}
+.banner h1{
+    font-family: 'Righteous', cursive;
+    font-size: 3em;
+    
+}
+
+.banner p{
+    font-family: -apple-system, sans-serif;
+}
+
+.banner a{
+    background-color: #404eed;
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+}
+.banner a:hover{
+    background-color: transparent;
+    color: #404eed;
+}
+
+#cards-img{
+    height: 250px;
+    margin: 10px;
+}
+
+.container{
+    padding: 40px;
+}
+
+.row{
+    margin: 10px;
+}
+
+#text-container{
+    padding: 4em;
+}

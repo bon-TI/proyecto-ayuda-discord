@@ -66,9 +66,21 @@ body{
     color: white;
     box-shadow: none;
 }
+.banner{
+    background-color: #404eed;
+    background-image: url('../img/clouds.svg');
+    background-size: 100%;
+    background-position-y: 100%;
+    background-repeat: no-repeat;
+} 
 
 .nstr-srv{
     font-family: 'Righteous', cursive;
+    background-color: #f8f9fa;
+}
+
+.nstr-srv-p{
+    background-color: #f8f9fa;
 }
 
 .nstr-srv-btn{
