@@ -2,67 +2,77 @@
 
 {% block title %}{{ data.titulo }}{% endblock %}
 
+{% block styles %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/docs-page.css') }}"
+/>
+{% endblock %} 
+
 {% block content %}
 
-<div class="flex-shrink-0 p-3 bg-white" style="width: 280px;">
-  <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
-    <svg class="bi me-2" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
-    <span class="fs-5 fw-semibold">Collapsible</span>
-  </a>
-  <ul class="list-unstyled ps-0">
-    <li class="mb-1">
-      <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
-        Home
-      </button>
-      <div class="collapse show" id="home-collapse">
-        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-          <li><a href="#" class="link-dark rounded">Overview</a></li>
-          <li><a href="#" class="link-dark rounded">Updates</a></li>
-          <li><a href="#" class="link-dark rounded">Reports</a></li>
+
+<div class="container" style="height: 90%;">
+  
+  <nav style="--bs-breadcrumb-divider: '/';" class="m-4" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Primeros Pasos</li>
+    </ol>
+  </nav>
+
+  <div class="row">
+    <div class="col-md-3">
+      
+      <div class="flex-shrink-0 p-3 bg-white" style="width: 280px;">
+        
+        <ul class="list-unstyled ps-0">
+          <li class="mb-1">
+            <button class="btn btn-toggle align-items-center rounded collapsed button-list" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+              Primeros Pasos
+            </button>
+            <div class="collapse show" id="home-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal p-3 small">
+                <li><a href="#" class="link-dark rounded">Crear una Cuenta</a></li>
+                <li><a href="#" class="link-dark rounded">Iniciar Sesión</a></li>
+                <li><a href="#" class="link-dark rounded">Verificacion</a></li>
+              </ul>
+            </div>
+          </li>
         </ul>
-      </div>
-    </li>
-    <li class="mb-1">
-      <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
-        Dashboard
-      </button>
-      <div class="collapse" id="dashboard-collapse">
-        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-          <li><a href="#" class="link-dark rounded">Overview</a></li>
-          <li><a href="#" class="link-dark rounded">Weekly</a></li>
-          <li><a href="#" class="link-dark rounded">Monthly</a></li>
-          <li><a href="#" class="link-dark rounded">Annually</a></li>
+
+        <ul class="list-unstyled ps-0">
+          <li class="mb-1">
+            <button class="btn btn-toggle align-items-center rounded collapsed button-list" data-bs-toggle="collapse" data-bs-target="#other-collapse" aria-expanded="true">
+              Proximamente...
+            </button>
+            <div class="collapse show" id="other-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal p-3 small">
+                <li><a href="#" class="link-dark rounded">Pronto...</a></li>
+                <li><a href="#" class="link-dark rounded">Ya lo verás...</a></li>
+                <li><a href="#" class="link-dark rounded">Espera...</a></li>
+              </ul>
+            </div>
+          </li>
         </ul>
+
       </div>
-    </li>
-    <li class="mb-1">
-      <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
-        Orders
-      </button>
-      <div class="collapse" id="orders-collapse">
-        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-          <li><a href="#" class="link-dark rounded">New</a></li>
-          <li><a href="#" class="link-dark rounded">Processed</a></li>
-          <li><a href="#" class="link-dark rounded">Shipped</a></li>
-          <li><a href="#" class="link-dark rounded">Returned</a></li>
-        </ul>
+
+    </div>
+    <div class="col-md-9">
+      <h3 class="m-2">Crear una Cuenta</h3>
+      <div class="m-2">
+        <p class="p-1 m-0">Para empezar a usar Discord, es necesario que crees una cuenta en la aplicación, o en la plataforma web de Discord e inicies sesión en la plataforma.</p>
+        <p class="p-1 m-0">Aqui te dejamos un video de YouTube, para que puedas orientarte y crees tu cuenta.
+        </p>
+        <p class="p-1 m-0">Para empezar a usar Discord, es necesario que crees una cuenta en la aplicación, o en la plataforma web de Discord e inicies sesión en la plataforma.</p>
       </div>
-    </li>
-    <li class="border-top my-3"></li>
-    <li class="mb-1">
-      <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
-        Account
-      </button>
-      <div class="collapse" id="account-collapse">
-        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-          <li><a href="#" class="link-dark rounded">New...</a></li>
-          <li><a href="#" class="link-dark rounded">Profile</a></li>
-          <li><a href="#" class="link-dark rounded">Settings</a></li>
-          <li><a href="#" class="link-dark rounded">Sign out</a></li>
-        </ul>
+      
+      <div class="w-auto d-flex justify-content-center">
+        <iframe class="m-3 p-2" width="80%" height="400" src="https://www.youtube.com/embed/dinlzJlzIB4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
-    </li>
-  </ul>
+    </div>
+  </div>
 </div>
 {% endblock %}
 
